@@ -44,7 +44,7 @@ def check_password():
         
 
 if check_password():
-    st.title("TCE GPT4 demo app")
+    st.title("TCE GPT4-turbo demo app")
 
     BASE_PROMPT = [{"role": "system", "content": "You are a helpful assistant. Your purpose is to help humans write digital content."}]
 
