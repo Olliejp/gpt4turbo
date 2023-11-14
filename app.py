@@ -46,12 +46,12 @@ def check_password():
 if check_password():
     st.title("TCE GPT4 demo app")
 
-    BASE_PROMPT = [{"role": "system", "content": "You are a helpful assistant."}]
+    BASE_PROMPT = [{"role": "system", "content": "You are a helpful assistant. Your purpose is to help humans write digital content."}]
 
     if "messages" not in st.session_state:
         st.session_state["messages"] = BASE_PROMPT
 
-    prompt = st.text_area("Prompt", placeholder="What do you want to know baby?")
+    prompt = st.text_area("Prompt", placeholder="What do you want me to help you with?")
 
     if st.button("Send", key="send"):
         with st.spinner("BEEP BOOOP BEEP BOOP..."):
